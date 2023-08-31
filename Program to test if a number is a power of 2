@@ -1,0 +1,5 @@
+user = int(input()) #8
+if user%2 == 0 and (user//2)%2 == 0:
+  print("True")
+else:
+  print("False")
