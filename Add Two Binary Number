@@ -1,0 +1,16 @@
+first = input()
+second = input()
+ini = 0
+sum = 0
+for i in range(len(first)-1,-1,-1):
+  sum+=(2**i)*(int(first[ini]))
+  ini+=1
+ini = 0
+for i in range(len(second)-1,-1,-1):
+  sum+=(2**i)*(int(second[ini]))
+  ini+=1
+output = ""
+while sum>0:
+  output+=str(sum%2)
+  sum = sum//2
+print(output[::-1])
